@@ -1,38 +1,1124 @@
-.App {
-  text-align: center;
+/* hero section */
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero-container {
+  background-color: #000; 
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: white;
+  background-image: radial-gradient(circle at 0% 20%,#46015b 0%, rgba(70, 1, 91, 0.3) 25%,transparent 40%);
+}
+
+.hero-content h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 64px !important;
+  line-height: 1.3 !important; 
+  font-weight: 400 !important; 
+  letter-spacing: -0.02em !important; 
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+
+
+.hero-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+ 
+}
+
+.purple-text-button {
+  color: #582168; 
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: inset 0px 8px 12px -6px rgba(168, 85, 247, 0.7);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.purple-text-button::after{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 100%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #3333ff, #ff00cc );
+  z-index: -1;
+}
+
+
+.purple-text-button:hover {
+  box-shadow: inset 0px 10px 15px -5px rgba(168, 85, 247, 0.9);
+  transform: translateY(-2px);
+  background-color: #f8f9fa;
+}
+
+
+
+.M-icon{
+  height: 526px;
+  width: 1439px;
+  top: 626px;
+}
+
+/* art gallery section */
+.gallery-section {
+  background-color: #000;
+  padding-top: 100px;
+}
+
+.gallery-title {
+  font-family: 'PP Neue Montreal', sans-serif; /* Using your spec */
+  font-size: 72px;
+  line-height: 96px; /* Compact like the hero */
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 20px;
+  letter-spacing: -2%;
+}
+
+.gallery-subtitle{
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0%;
+}
+
+.art-card {
+  background: #111; /* Dark background for the card */
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  
+}
+
+.art-card:hover {
+  transform: translateY(-10px);
+  border-color: #C500FF; /* Using your bright purple spec */
+}
+
+.art-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* case studies section */
+
+.case-studies {
+  background-color: #000;
+  padding: 100px 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.section-header {
+  width: 100%;
+  margin-bottom: 60px; /* Space between text and the cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the tag, title, and subtitle horizontally */
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
+.section-tag { color: #C500FF; text-transform: uppercase; font-size: 18px; }
+.section-title { font-size: 64px; font-weight: 500; margin: 10px 0; }
+
+.bento-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1030px; /* 608px + 398px + 24px gap */
+  gap: 24px;
+  margin: 50px auto; /* Centers the whole thing */
+  padding: 0;
+}
+
+.bento-card {
+  background: linear-gradient(145deg, #1a0b2e 0%, #0a0a0a 100%); /* Purple tint from Figma */
+  border-radius: 24px;
+  padding-left: 20px;
+  border: 1px solid rgba(197, 0, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .card-text{
+  padding: 40px 0px 40px 0px; 
+
+} */
+
+
+
+.card-text strong {
+  color: #ffffff; 
+  font-weight: 600;
+}
+
+
+
+.ducky-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0; /* Remove padding so image can touch edges */
+  overflow: hidden;
+  width: 608px;
+  height: 437px;
+}
+
+.ducky-card .card-text {
+  padding: 20px;
+}
+
+.ducky-card .card-image {
+  width: 240px; /* Adjust based on Figma */
+  height: 437px;
+  margin-top: auto; /* Aligns image to the bottom */
+}
+
+.ducky-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px 0 0 0; /* Optional: rounds only the top-left of the image */
+}
+
+.ducky-card .card-text{
+  margin-top: 40px;
+
+}
+
+.ducky-card .card-text h3 {
+  font-size: 32px;
+  font-weight: 600px;
+  
+  color: #ffffff;
+  letter-spacing: -0.02em; /* Tighter heading */
+}
+
+.ducky-card .card-text p {
+  line-height: 1.6; 
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 320px;
+}
+
+.kendoge-card{
+  width: 398px;
+  height: 446px;
+  overflow: hidden;
+  
+}
+
+.kendoge-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(197, 0, 255, 0.1); /* Subtle purple overlay */
+  z-index: 0; /* Places it behind the content */
+  border-radius: 24px;
+}
+
+ .kendoge-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  filter: blur(0.3px) drop-shadow(0 0 12px rgba(197,0,255,0.6));
+  z-index: 1; /* Places it above the before but below the content */
+  border-radius: 24px;
+} 
+
+
+.kendo-wave {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  top: 0%;
+  left: 60%;
+  width: 160%;
+  height: auto;
+  opacity: 0.8;
+  /* filter: drop-shadow(0 12px rgba(197, 0, 255, 0.25))
+          drop-shadow(0 24px rgba(197, 0, 255, 0.18))
+          drop-shadow(0 36px rgba(197, 0, 255, 0.12))
+          drop-shadow(0 48px rgba(197, 0, 255, 0.06)); */
+}
+
+/* .wave-bg {
+  position: absolute;
+  top: -20%;
+  left: -20%;
+  width: 10%;
+  height: auto;
+  opacity: 0.8;
+  filter: drop-shadow(0 12px rgba(197, 0, 255, 0.25))
+          drop-shadow(0 24px rgba(197, 0, 255, 0.18))
+          drop-shadow(0 36px rgba(197, 0, 255, 0.12))
+          drop-shadow(0 48px rgba(197, 0, 255, 0.06));
+  pointer-events: none;
+} */
+
+.ducky-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(197, 0, 255, 0.1); /* Subtle purple overlay */
+  z-index: 0; /* Places it behind the content */
+  border-radius: 24px;
+}
+
+.nebula-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(197, 0, 255, 0.1); /* Subtle purple overlay */
+  z-index: 0; /* Places it behind the content */
+  border-radius: 24px;
+}
+
+.nebula-wave {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  top: 0%;
+  left: 0%;
+  width: 160%;
+  height: auto;
+  opacity: 0.8;
+  /* filter: drop-shadow(0 12px rgba(197, 0, 255, 0.25))
+          drop-shadow(0 24px rgba(197, 0, 255, 0.18))
+          drop-shadow(0 36px rgba(197, 0, 255, 0.12))
+          drop-shadow(0 48px rgba(197, 0, 255, 0.06)); */
+}
+
+.hyper-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(197, 0, 255, 0.1); /* Subtle purple overlay */
+  z-index: 0; /* Places it behind the content */
+  border-radius: 24px;
+}
+
+.kendoge-card .card-text{
+  margin-top: 90px ;
+  margin-right: 40px;
+  
+}
+
+.kendoge-card .card-text h3 {
+  font-size: 32px;
+  font-weight: 600px;
+  
+  color: #ffffff;
+  letter-spacing: -0.02em; /* Tighter heading */
+}
+
+.kendoge-card .card-text p {
+  line-height: 1.6; 
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 320px;
+}
+
+.nebula-card{
+  width: 398px;
+  height: 493px;
+  grid-column: 1;
+}
+
+.nebula-card .card-text{
+  margin-top: 200px;
+
+}
+
+.nebula-card .card-text h3 {
+  font-size: 32px;
+  font-weight: 600px;
+  
+  color: #ffffff;
+  letter-spacing: -0.02em; /* Tighter heading */
+}
+
+.nebula-card .card-text p {
+  line-height: 1.6; 
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 320px;
+}
+
+.hyper-card {
+  grid-column: 2; 
+  display: flex;
+  justify-content: space-between;
+  padding-right: 45px; /* Helps the circle blend toward the edge */
+  width: 608px;
+  height: 477px;
+  padding-bottom: 80px;
+}
+
+.hyper-card .card-text{
+  margin-top: 80px;
+  
+}
+
+.hyper-card .card-text h3 {
+  font-size: 32px;
+  font-weight: 600px;
+  
+  color: #ffffff;
+  letter-spacing: -0.02em; /* Tighter heading */
+}
+
+.hyper-card .card-text p {
+  line-height: 1.6; 
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 280px;
+}
+
+
+/* .circle-image-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #C500FF; /* That purple ring in your screenshot */
+  /* overflow: hidden; */
+
+
+/* .circle-img { width: 100%; height: 100%; object-fit: cover; } */
+
+.circle-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hyper-circle-frame {
+  width: 280px; /* Large size to match Figma */
+  height: 280px;
+  border-radius: 50%;
+  border: 14px solid rgba(120, 3, 155, 0.56);
+  overflow: hidden;
+ box-shadow: 
+    0 0 40px rgba(197, 0, 255, 0.4),            /* Your existing outer glow */
+    inset 0px 5.32px 5.32px rgba(197, 0, 255, 0.8), /* Inner Shadow 1: Y=5.32, Blur=5.32 */
+    inset 0px -4px 4px rgba(197, 0, 255, 0.4);      /* Inner Shadow 2: Y=-4, Blur=4 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.hyper-circle-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the bot fills the circle */
+}
+
+
+
+/* THE GLOWING SEMI-CIRCLE ARC */
+.problems-grid::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* Large size creates the shallow arc effect */
+  width: 1350px; 
+  height: 2200px;
+  border-radius: 50%;
+  
+  /* Apply your 'blend Circle' linear gradient to the border only */
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #000000, #2D003A, #C500FF, #2D003A, #000000) border-box;
+  
+  /* This MASK is the secret: it keeps the inside black and shows only the border */
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+
+  /* The soft neon glow effect */
+  filter: blur(2px);
+  box-shadow: 0 0 60px #000000;
+  
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* problem section */
+.problems-section {
+  background-color: #000;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+ 
+}
+
+.problems-main-title {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  margin-bottom: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  word-spacing: -5px;
+}
+
+/* THE $2 \times 2$ GRID */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 400px); /* Fixed width like the Figma */
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.problem-box {
+  background: linear-gradient(
+    145deg, 
+    rgba(118, 0, 153, 0.15) 0%,   /* #760099 at 15% */
+    rgba(10, 10, 10, 1) 100%      /* Fades to near black */
+  );
+  border: 1.5px solid rgba(197, 0, 255, 0.1); /* Subtle purple border */
+  border-radius: 24px;
+  padding: 50px 50px;
+  width: 398px;
+  height: 368px;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: border-color 0.3s ease;
+  
+}
+
+
+
+.problem-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 0, 0, 0.3); /* Subtle red glow */
+}
+
+/* THE RED GLOWING BOX (Matches your Figma Screenshot) */
+.problem-icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 0, 0, 0.08); /* Transparent red tint */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto; /* Centers the icon above the text */
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  
+}
+
+/* THE SAD FACE CIRCLE */
+.sad-face {
+  width: 27px;
+  height: 27px;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* THE EYES */
+.sad-face::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 2px;
+  height: 2px;
+  background: #ff0000;
+  border-radius: 50%;
+  box-shadow: 10px 0 0 #ff0000; /* Draws the second eye */
+}
+
+/* THE FROWN */
+.sad-face::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #ff0000;
+  border-bottom: 0; /* Creates the upward curve */
+  border-left: 0;
+  border-right: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.problem-box h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.problem-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: white;
+  opacity: 0.9;
+}
+
+/* SOLUTION TEXT BELOW */
+.solution-intro {
+  margin-top: 360px;
+}
+
+.solution-tag {
+  color: #C500FF;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight:normal;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.solution-title {
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.solution-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 20px;
+}
+
+
+
+
+
+
+.solutions-section {
+  background-color: #000;
+  padding: 100px 0;
+  color: white;
+}
+
+/* THE 2x2 GRID */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 380px); /* Adjust width to match Figma */
+  gap: 24px;
+  justify-content: center;
+}
+
+.solution-box {
+  /* Using your card-grad colors at 10% opacity */
+  background: linear-gradient(145deg, rgba(197, 0, 255, 0.1) 0%, rgba(118, 0, 153, 0.05) 100%);
+  background-color: #080808; 
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 80px 50px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.solution-box:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 255, 128, 0.3); /* Subtle green glow on hover */
+}
+
+/* GREEN ICON BOX */
+.solution-icon-container {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 255, 128, 0.1); /* Faint green square */
+  border: 1px solid rgba(0, 255, 128, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+/* THE GREEN GLOWING BOX */
+.solution-icon-container {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 255, 0, 0.08); /* Transparent green tint */
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px auto; /* Centering and separation */
+  border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+/* THE FACE CIRCLE */
+.happy-face {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #00FF00;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* THE EYES */
+.happy-face::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  width: 2px;
+  height: 2px;
+  background: #00FF00;
+  border-radius: 50%;
+  box-shadow: 10px 0 0 #00FF00; /* Second eye */
+}
+
+/* THE SMILE */
+.happy-face::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #00FF00;
+  border-top: 0; /* REMOVES top border to create a smile curve */
+  border-left: 0;
+  border-right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.solution-box h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.solution-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 800px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .solution-main-title {
+    font-size: 40px;
+  }
+}
+
+.testimonial-tag{
+  color: #C500FF;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.testimonial-title{
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.testimonial-subtitle{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials-section {
+  background-color: #000;
+  padding: 100px 0;
+  color: #fff;
+}
+
+ .testimonial-wrapper {
+  position: relative;
+  max-width: 550px;
+  margin: 120px auto; /* Space for the fold */
+  padding-left: 40px; /* Offset to allow fold to hang off the left */
+}
+
+
+
+/* THE PURPLE RIBBON HEADER */
+.testimonial-ribbon {
+  background: linear-gradient(90deg, #760099 0%, #C500FF 100%);
+  padding: 30px 30px;
+  border-radius: 0px 0px 0px 0; /* Flat bottom-left for the fold */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  color: white;
+  width: calc(100% + 180px);
+  margin-left: -90px;
+}
+
+/* THE OUTSIDE TRIANGULAR FOLD */
+.ribbon-fold-outside {
+  position: absolute;
+  left: -2px;
+  bottom: -80px; /* Hangs below the ribbon */
+  width: 0;
+  height: 0;
+  /* Darker shade of your #760099 for shadow depth */
+  border-top: 80px solid #2D003A; 
+  border-left: 90px solid transparent;
+  z-index: 4;
+}
+
+/* THE DARK BODY */
+.testimonial-content {
+  /* background-color: #080808; */
+  border: 1.5px solid transparent;
+  background: linear-gradient(#080808, #080808) padding-box, 
+              linear-gradient(to bottom, #000000 50%, #2D003A 30%, #C500FF 100%) border-box;
+  
+  /* Adds the soft outer glow only to the bottom/sides */
+  box-shadow: 0 15px 40px -10px rgba(197, 0, 255, 0.2);
+  border-radius: 0 0 32px 32px;
+  padding: 50px 30px 90px;
+  margin-top: -10px; /* Pulls the body up under the ribbon */
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* HEADER TYPOGRAPHY */
+.user-info h5 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.ribbon-logo {
+  width: 32px;
+  height: auto;
+}
+
+.testimonial-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 330px;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+@keyframes scroll-left {
   from {
-    transform: rotate(0deg);
+    transform: translateX(0);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(-100%);
+  }
+}
+
+.testimonial-marquee:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+.testimonial-wrapper {
+  transform: scale(0.98);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-wrapper:hover {
+  transform: scale(1);
+}
+
+
+/* JOIN OVER 15+ PROJECTS CTA */
+.join-projects-box {
+  /* INTERNAL BACKGROUND FADE */
+  /* Fades from pure black to a mild, rich purple at the bottom */
+  background: linear-gradient(to bottom, #000000 0%, #12001a 40%, #2D003A 100%); 
+  
+  /* THE SUBTLE BORDER FADE */
+  /* Starts with no line (black/transparent) and fades into a soft purple line */
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  background-image: 
+    linear-gradient(to bottom, #000000, #12001a, #2D003A), /* Inside fill */
+    linear-gradient(to bottom, transparent 0%, rgba(197, 0, 255, 0) 30%, rgba(197, 0, 255, 0.4) 100%); /* Subtle border */
+  
+ 
+  border: 0px solid rgba(197, 0, 255, 0.1);
+  border-radius: 0 0 40px 40px;
+  padding: 90px;
+  margin-top: 80px;
+}
+
+.user-avatars img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-left: 3px; /* Stacked avatar effect */
+}
+
+.join-title {
+  font-size: 48px;
+  letter-spacing: -0.04em;
+  margin: 20px 0 10px;
+}
+
+/* .schedule-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 30px;
+  transition: transform 0.2s ease;
+}
+
+.schedule-btn:hover {
+  transform: scale(1.05);
+} */
+
+.schedule-btn {
+  color: #582168; 
+  border: none;
+  border-radius: 50px;
+  padding: 14px 28px;
+  overflow: hidden;
+  font-size: 1.1rem;
+  box-shadow: inset 0px 8px 12px -6px rgba(168, 85, 247, 0.7);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-btn::after{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 100%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #3333ff, #ff00cc );
+  z-index: -1;
+}
+
+
+.schedule-btn:hover {
+  box-shadow: inset 0px 10px 15px -5px rgba(168, 85, 247, 0.9);
+  transform: translateY(-2px);
+  background-color: #f8f9fa;
+}
+
+
+
+.faq-section {
+  background-color: #000;
+  padding: 100px 0;
+  color: white;
+}
+
+.faq-header h2 {
+  font-size: 56px;
+  letter-spacing: -0.05em; /* Matching your tight spacing */
+  margin-bottom: 10px;
+}
+
+.faq-header p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 60px;
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* THE INACTIVE STATE */
+.faq-item {
+  background-color: #0a0012; /* Very deep purple/black */
+  border-radius: 20px;
+  padding: 36px 44px;
+  cursor: pointer;
+  border: 1px solid rgba(197, 0, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* THE ACTIVE STATE */
+.faq-item.active {
+  background-color: #760099; /* Bright purple from your figma */
+  border-color: #C500FF;
+}
+
+.faq-question-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question-row h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.faq-answer {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-answer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.footer-section {
+  background-color: #000;
+  /* Subtle purple fade from the bottom left as seen in image_88166c */
+  background-image: radial-gradient(circle at 0% 70%,#46015b 0%, rgba(70, 1, 91, 0.3) 25%,transparent 40%);
+  padding: 60px 0 120px;
+  color: #fff;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(197, 0, 255, 0.3); /* Thin purple line */
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-logo {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  letter-spacing: -0.02em;
+}
+
+.text-purple {
+  color: #C500FF; /* Merit in purple */
+}
+
+.copyright {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  margin-top: 50px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+/* SQUARE SOCIAL BOXES */
+.social-box {
+  width: 90px;
+  height: 90px;
+  background-color: #0a0012; /* Very dark purple */
+  border: 1px solid rgba(197, 0, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C500FF; /* Icons in purple */
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-box:hover {
+  background-color: #760099;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
   }
 }
