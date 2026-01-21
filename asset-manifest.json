@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/merit/static/css/main.31c8b19c.css",
-    "main.js": "/merit/static/js/main.d0b140a7.js",
+    "main.js": "/merit/static/js/main.83e0faaf.js",
     "static/js/453.805bbe09.chunk.js": "/merit/static/js/453.805bbe09.chunk.js",
     "static/media/grad.png": "/merit/static/media/grad.8114d1407e4e9f615aae.png",
     "static/media/char2.png": "/merit/static/media/char2.74c411759d72178c512a.png",
@@ -11,11 +11,11 @@
     "static/media/hypertrade.png": "/merit/static/media/hypertrade.732cd497882bb5fcb6a2.png",
     "index.html": "/merit/index.html",
     "main.31c8b19c.css.map": "/merit/static/css/main.31c8b19c.css.map",
-    "main.d0b140a7.js.map": "/merit/static/js/main.d0b140a7.js.map",
+    "main.83e0faaf.js.map": "/merit/static/js/main.83e0faaf.js.map",
     "453.805bbe09.chunk.js.map": "/merit/static/js/453.805bbe09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31c8b19c.css",
-    "static/js/main.d0b140a7.js"
+    "static/js/main.83e0faaf.js"
   ]
 }
