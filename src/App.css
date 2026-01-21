@@ -270,16 +270,42 @@ html, body {
     font-size: 11px;
     line-height: 1.45;
     z-index: 2;
-    max-width: 250px;
+    max-width: 290px;
     padding-top: -70px;
+  }
+
+  .ducky-card .card-text p,
+  .hyper-card .card-text p {
+    width: 100%;
+    padding: 8px;
+    padding-right: 20%;   /* ⬅️ THIS is the key */
+    font-size: 10px;
+    line-height: 1.45;
+    z-index: 2;
+    max-width: 240px;
+    padding-top: -70px;
+  }
+
+  .kendoge-card .card-text,
+  .nebula-card .card-text {
+    width: 100%;
+    padding: 1px;
+    padding-right: 22%;   /* ⬅️ THIS is the key */
+    font-size: 11px;
+    line-height: 1.45;
+    z-index: 2;
+    max-width: 240px;
+    
   }
 
   .ducky-card .card-text h3,
   .hyper-card .card-text h3 {
     font-size: 20px;
-    margin-bottom: 3px;
-    margin-top: -28px;
+    
+    margin-top: -38px;
   }
+
+ 
 
   /* IMAGE COLUMN */
   .ducky-card .card-image,
@@ -287,7 +313,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40% !important;          /* ⬅️ reduced image space */
+    width: 47% !important;          /* ⬅️ reduced image space */
     height: 100%;
   }
 
@@ -410,7 +436,7 @@ html, body {
 }
 
 .ducky-card .card-image {
-  width: 240px; /* Adjust based on Figma */
+  width: 290px; /* Adjust based on Figma */
   height: 437px;
   margin-top: auto; /* Aligns image to the bottom */
 }
