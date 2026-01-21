@@ -12,12 +12,12 @@ const Hero = () => {
             <div className="d-flex align-items-center justify-content-center text-center vh-100 hero-content">
             <div>
       <h1 className="display-2 fw-lighter mb-4 mt-1">
-        Struggling To Gain Visibility In <br />
+        Struggling To Gain Visibility In
         The Crowded Web3 Space?
       </h1>
       
       <p className="text-secondary mb-5 fs-5">
-        We help projects cut through the noise, securing long-term organic growth and <br />
+        We help projects cut through the noise, securing long-term organic growth and
         building active, engaged communities
       </p>
 
@@ -28,19 +28,10 @@ const Hero = () => {
     </div>
 
 
-    {/* <div className="radar-container mt-auto">
-  <div className="radar-arcs">
-    <div className="arc"></div>
-    <div className="arc"></div>
-    <div className="arc"></div>
-  </div>
-  <div className="radar-logo-circle">
-    <img src="/Group.png" alt="M Icon" />
-  </div>
-</div> */}
+   
 <header className="d-flex justify-content-center pt-5 hero-radar">
          <div className="d-flex align-items-center">
-            <img src="/grad.png" alt="M Icon" style={{ width: '1439px', height: '526px' }}className="M-icon" />
+            <img src="/grad.png" alt="M Icon" style={{ width: '1350px', height: '526px' }}className="M-icon" />
           </div>
 </header>
     </section>

@@ -8,7 +8,7 @@ const CaseStudies = () => {
      
     <div className="section-header">
     <span className="section-tag">Clients</span>
-    <h2 className="section-title">Project’s We Have Tranformed</h2>
+    <h2 className="section-title">Project’s We Have Transformed</h2>
     <p className="section-subtitle text-secondary">We help projects cut through the noise, securing</p>
     </div>
     <div className="bento-grid">

@@ -22,7 +22,7 @@ const Problems = () => {
 
     <section className="problems-section">
       <div className="container">
-        <h2 className="problems-main-title">What Problems Is Your Project<br/> Facing Currently?</h2>
+        <h2 className="problems-main-title">What Problems Is Your Project Facing Currently?</h2>
         
         <div className="problems-grid">
           {problemList.map((item, index) => (
@@ -38,7 +38,7 @@ const Problems = () => {
          
          <div className="solution-intro">
           <span className="solution-tag">Solution</span>
-          <h2 className="solution-title">Let’s Help You Solve Your<br/> Problems</h2>
+          <h2 className="solution-title">Let’s Help You Solve Your Problems</h2>
           <p className="solution-subtitle">We Tackle Your Visibility Problem different ways</p>
         </div>
 

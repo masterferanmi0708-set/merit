@@ -11,7 +11,7 @@ const cards = Array(6).fill({
         {/* Header Section */}
         <div className="testimonial-intro mb-5">
           <span className="testimonial-tag">Testimonials</span>
-          <h2 className="testimonial-title">Don’t Take Our Words<br/> From It</h2>
+          <h2 className="testimonial-title">Don’t Take Our Words From It</h2>
           <p className="testimonial-subtitle">What Our Clients are saying about us</p>
         </div>
 
@@ -43,7 +43,7 @@ const cards = Array(6).fill({
 </div>
 
         {/* Join Projects CTA Box */}
-        <div className="join-projects-box mt-5">
+        <div className=" container join-projects-box mt-5">
           <div className="user-avatars mb-3">
              <img src="/avatar1.png" alt="u1" />
              <img src="/avatar2.png" alt="u2" />
