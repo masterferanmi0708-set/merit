@@ -313,7 +313,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 47% !important;          /* ⬅️ reduced image space */
+    width: 40% !important;          /* ⬅️ reduced image space */
     height: 100%;
   }
 
