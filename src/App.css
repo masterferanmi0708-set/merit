@@ -266,7 +266,7 @@ html, body {
   .hyper-card .card-text {
     width: 100%;
     padding: 12px;
-    padding-right: 32%;   /* ⬅️ THIS is the key */
+    padding-right: 20%;   /* ⬅️ THIS is the key */
     font-size: 11px;
     line-height: 1.45;
     z-index: 2;
@@ -290,7 +290,7 @@ html, body {
   .nebula-card .card-text {
     width: 100%;
     padding: 1px;
-    padding-right: 22%;   /* ⬅️ THIS is the key */
+    padding-right: 3%;   /* ⬅️ THIS is the key */
     font-size: 11px;
     line-height: 1.45;
     z-index: 2;
@@ -313,7 +313,7 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 40% !important;          /* ⬅️ reduced image space */
+    width: 45% !important;          /* ⬅️ reduced image space */
     height: 100%;
   }
 
@@ -730,6 +730,12 @@ html, body {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .problem-box,.solution-box {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 800px) {
   .problems-grid::before {
     top: 50%;
@@ -739,6 +745,8 @@ html, body {
     height: 2800px;
   }
 }
+
+
 
 /* problem section */
 .problems-section {
@@ -782,7 +790,7 @@ html, body {
   );
   border: 1.5px solid rgba(197, 0, 255, 0.1); /* Subtle purple border */
   border-radius: 24px;
-  padding: 80px 50px;
+  padding: 80px 10px;
   /* width: 398px;
   height: 368px; */
   
@@ -919,9 +927,10 @@ html, body {
   background-color: #080808; 
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 24px;
-  padding: 80px 50px;
+  padding: 80px 10px;
   text-align: center;
   transition: transform 0.3s ease;
+
 }
 
 .solution-box:hover {
@@ -1265,7 +1274,7 @@ html, body {
  
   border: 0px solid rgba(197, 0, 255, 0.1);
   border-radius: 0 0 40px 40px;
-  padding: 90px;
+  padding: 30px;
   margin-top: 80px;
 }
 
@@ -1402,7 +1411,7 @@ html, body {
 .faq-item {
   background-color: #140019; /* Very deep purple/black */
   border-radius: 20px;
-  padding: 36px 44px;
+  padding: 36px 24px;
   cursor: pointer;
   border: 1px solid rgba(197, 0, 255, 0.1);
   transition: all 0.3s ease;
