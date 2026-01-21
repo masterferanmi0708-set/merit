@@ -279,7 +279,7 @@ html, body {
     width: 100%;
     padding: 8px;
     padding-right: 20%;   /* ⬅️ THIS is the key */
-    font-size: 10px;
+    font-size: 9px;
     line-height: 1.45;
     z-index: 2;
     max-width: 240px;
