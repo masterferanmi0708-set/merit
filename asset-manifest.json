@@ -1,15 +1,21 @@
 {
   "files": {
     "main.css": "/merit/static/css/main.31c8b19c.css",
-    "main.js": "/merit/static/js/main.ea0eed52.js",
+    "main.js": "/merit/static/js/main.d0b140a7.js",
     "static/js/453.805bbe09.chunk.js": "/merit/static/js/453.805bbe09.chunk.js",
+    "static/media/grad.png": "/merit/static/media/grad.8114d1407e4e9f615aae.png",
+    "static/media/char2.png": "/merit/static/media/char2.74c411759d72178c512a.png",
+    "static/media/char1.png": "/merit/static/media/char1.97d0aeca45fd9331cae2.png",
+    "static/media/char3.png": "/merit/static/media/char3.ddfe4f6fa3bb9113f1ee.png",
+    "static/media/ducky.png": "/merit/static/media/ducky.60e08767e57a44101c4a.png",
+    "static/media/hypertrade.png": "/merit/static/media/hypertrade.732cd497882bb5fcb6a2.png",
     "index.html": "/merit/index.html",
     "main.31c8b19c.css.map": "/merit/static/css/main.31c8b19c.css.map",
-    "main.ea0eed52.js.map": "/merit/static/js/main.ea0eed52.js.map",
+    "main.d0b140a7.js.map": "/merit/static/js/main.d0b140a7.js.map",
     "453.805bbe09.chunk.js.map": "/merit/static/js/453.805bbe09.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31c8b19c.css",
-    "static/js/main.ea0eed52.js"
+    "static/js/main.d0b140a7.js"
   ]
 }
