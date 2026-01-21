@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/merit/static/css/main.31c8b19c.css",
+    "main.js": "/merit/static/js/main.ea0eed52.js",
+    "static/js/453.805bbe09.chunk.js": "/merit/static/js/453.805bbe09.chunk.js",
+    "index.html": "/merit/index.html",
+    "main.31c8b19c.css.map": "/merit/static/css/main.31c8b19c.css.map",
+    "main.ea0eed52.js.map": "/merit/static/js/main.ea0eed52.js.map",
+    "453.805bbe09.chunk.js.map": "/merit/static/js/453.805bbe09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31c8b19c.css",
+    "static/js/main.ea0eed52.js"
+  ]
+}
