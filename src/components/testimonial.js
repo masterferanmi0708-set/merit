@@ -3,7 +3,7 @@ import avatar2 from '../images/avatar2.png';
 import avatar3 from '../images/avatar3.png';
 import avatar4 from '../images/avatar4.png';
 import avatar5 from '../images/avatar5.png';
-import logo from '../images/merit-logo.png';
+import log from '../images/Group.png';
 const Testimonial = () => {
 const cards = Array(6).fill({
   name: "Sarah Jonshon",
@@ -31,7 +31,7 @@ const cards = Array(6).fill({
                   <h5>{card.name}</h5>
                   <p>{card.role}</p>
                 </div>
-                <img src={logo} alt="logo" className="ribbon-logo" />
+                <img src={log} alt="logo" className="ribbon-logo" />
                 <div className="ribbon-fold-outside"></div>
               </div>
 
