@@ -1,3 +1,5 @@
+import logo from '../images/merit-logo.png';
+import icon from '../images/grad.png';
 const Hero = () => {
 
   return (
@@ -5,7 +7,7 @@ const Hero = () => {
            {/* Hero header */}
         <header className="d-flex justify-content-center pt-5 hero-header">
           <div className="d-flex align-items-center">
-            <img src="/merit-logo.png" alt="Merit Logo" style={{ width: '208px', height: '40px' }}className="logo-icon" />
+            <img src={logo}  alt="Merit Logo" style={{ width: '208px', height: '40px' }}className="logo-icon" />
           </div>
         </header>
             {/* Hero Content */}
@@ -31,7 +33,7 @@ const Hero = () => {
    
 <header className="d-flex justify-content-center pt-5 hero-radar">
          <div className="d-flex align-items-center">
-            <img src="/grad.png" alt="M Icon" style={{ width: '1350px', height: '526px' }}className="M-icon" />
+            <img src={icon} alt="M Icon" style={{ width: '1350px', height: '526px' }}className="M-icon" />
           </div>
 </header>
     </section>

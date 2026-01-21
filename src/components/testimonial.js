@@ -1,3 +1,8 @@
+import avatar1 from '../images/avatar1.png';
+import avatar2 from '../images/avatar2.png';
+import avatar3 from '../images/avatar3.png';
+import avatar4 from '../images/avatar4.png';
+import avatar5 from '../images/avatar5.png';
 const Testimonial = () => {
 const cards = Array(6).fill({
   name: "Sarah Jonshon",
@@ -25,7 +30,7 @@ const cards = Array(6).fill({
                   <h5>{card.name}</h5>
                   <p>{card.role}</p>
                 </div>
-                <img src="/logo.png" className="ribbon-logo" />
+                <img src="/logo.png" alt="logo" className="ribbon-logo" />
                 <div className="ribbon-fold-outside"></div>
               </div>
 
@@ -45,11 +50,11 @@ const cards = Array(6).fill({
         {/* Join Projects CTA Box */}
         <div className=" container join-projects-box mt-5">
           <div className="user-avatars mb-3">
-             <img src="/avatar1.png" alt="u1" />
-             <img src="/avatar2.png" alt="u2" />
-             <img src="/avatar3.png" alt="u3" />
-             <img src="/avatar4.png" alt="u4" />
-             <img src="/avatar5.png" alt="u5" />
+             <img src={avatar1} alt="u1" />
+             <img src={avatar2} alt="u2" />
+             <img src={avatar3} alt="u3" />
+             <img src={avatar4} alt="u4" />
+             <img src={avatar5} alt="u5" />
           </div>
           <h2 className="join-title">Join Over 15+ Projects</h2>
           <p className="join-subtitle">What Our Clients are saying about us</p>

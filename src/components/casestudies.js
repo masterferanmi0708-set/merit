@@ -1,4 +1,5 @@
-
+import ducky from '../images/ducky.png';
+import bot from '../images/hypertrade.png';
 const CaseStudies = () => {
 
   return (
@@ -20,7 +21,7 @@ const CaseStudies = () => {
 Our artwork attracted attention from top KOLs in China, Japan, and the U.S. The branding efforts drove massive awareness, helping Ducky’s market cap increase from <strong>$6M to over $15M</strong></p>
         </div>
         <div className="card-image tall">
-          <img src="/ducky.png" alt="Ducky" />
+          <img src={ducky} alt="Ducky" />
         </div>
       </div>
 
@@ -61,7 +62,7 @@ We grew Twitter followers from <strong>4,000 to 5,000</strong> and increased Dis
         </div>
         <div className="circle-image-container">
             <div className="hyper-circle-frame">
-           <img src="/hypertrade.png" className="circle-img" />
+           <img src={bot} alt="HyperTrade Bot" className="circle-img" />
             </div>
         </div>
       </div>
