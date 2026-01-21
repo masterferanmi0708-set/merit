@@ -1330,11 +1330,11 @@ html, body {
 } */
 
 .schedule-btn {
-  width: 220px;
+
   color: #582168; 
   border: none;
   border-radius: 50px;
-  padding: 14px 28px;
+  padding: 14px 8px;
   overflow: hidden;
   font-size: 1.1rem;
   box-shadow: inset 0px 8px 12px -6px rgba(168, 85, 247, 0.7);
@@ -1348,10 +1348,10 @@ html, body {
 
 @media (max-width: 480px) {
   .schedule-btn {
-    width: 200px;
-    height: 70px;
+    margin-left: -10px; /* adjust value */
   }
 }
+
 
 .schedule-btn::after{
   content: '';
