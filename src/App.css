@@ -1330,6 +1330,7 @@ html, body {
 } */
 
 .schedule-btn {
+  width: 220px;
   color: #582168; 
   border: none;
   border-radius: 50px;
@@ -1343,6 +1344,13 @@ html, body {
   justify-content: center;
   align-items: center;
   font-size: clamp(8px, 10vw, 16px) !important; 
+}
+
+@media (max-width: 480px) {
+  .schedule-btn {
+    width: 200px;
+    height: 70px;
+  }
 }
 
 .schedule-btn::after{
@@ -1574,3 +1582,9 @@ body {
   }
 }
 
+/* @media (max-width: 768px) {
+  .schedule-btn {
+    padding: 10px 40px;
+    font-size: 14px;
+  }
+} */
