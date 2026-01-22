@@ -267,7 +267,7 @@ html, body {
     width: 100%;
     padding: 12px;
     padding-right: 20%;   /* ⬅️ THIS is the key */
-    font-size: 11px;
+    font-size: 14px;
     line-height: 1.45;
     z-index: 2;
     max-width: 290px;
@@ -290,11 +290,11 @@ html, body {
   .nebula-card .card-text {
     width: 100%;
     padding: 1px;
-    padding-right: 3%;   /* ⬅️ THIS is the key */
+    padding-right: 1%;   /* ⬅️ THIS is the key */
     font-size: 11px;
     line-height: 1.45;
     z-index: 2;
-    max-width: 240px;
+    max-width: 250px;
     
   }
 
@@ -730,11 +730,8 @@ html, body {
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .problem-box,.solution-box {
-    padding: 10px;
-  }
-}
+
+
 
 @media (max-width: 800px) {
   .problems-grid::before {
@@ -790,7 +787,7 @@ html, body {
   );
   border: 1.5px solid rgba(197, 0, 255, 0.1); /* Subtle purple border */
   border-radius: 24px;
-  padding: 80px 10px;
+  padding: 80px 5px;
   /* width: 398px;
   height: 368px; */
   
@@ -927,7 +924,7 @@ html, body {
   background-color: #080808; 
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 24px;
-  padding: 80px 10px;
+  padding: 80px 5px;
   text-align: center;
   transition: transform 0.3s ease;
 
