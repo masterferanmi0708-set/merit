@@ -267,7 +267,7 @@ html, body {
     width: 100%;
     padding: 12px;
     padding-right: 20%;   /* ⬅️ THIS is the key */
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.45;
     z-index: 2;
     max-width: 290px;
@@ -372,7 +372,7 @@ html, body {
   .hyper-card .card-text {
     width: 65%;                 /* ⬅️ MORE SPACE FOR TEXT */
     padding: 20px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.45;
     z-index: 2;
   }
@@ -407,9 +407,9 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    padding-top: 30px;   /* was probably 80–120px */
-    padding-bottom: 40px;
+  .hero-content {
+    padding-top: 24px;   /* was probably 80–120px */
+    padding-bottom: 90px;
   }
 }
 
