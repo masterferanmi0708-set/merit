@@ -265,7 +265,7 @@ html, body {
   .ducky-card .card-text,
   .hyper-card .card-text {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     padding-right: 10%;   /* ⬅️ THIS is the key */
     font-size: 10px;
     line-height: 1.45;
@@ -743,9 +743,9 @@ html, body {
   .problems-grid::before {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
+    transform: translate(-50%, -46%);
     width: 1350px; 
-    height: 2800px;
+    height: 2680px;
   }
 }
 
