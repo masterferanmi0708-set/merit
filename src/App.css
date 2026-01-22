@@ -266,8 +266,8 @@ html, body {
   .hyper-card .card-text {
     width: 100%;
     padding: 12px;
-    padding-right: 20%;   /* ⬅️ THIS is the key */
-    font-size: 14px;
+    padding-right: 10%;   /* ⬅️ THIS is the key */
+    font-size: 10px;
     line-height: 1.45;
     z-index: 2;
     max-width: 290px;
