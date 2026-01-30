@@ -92,7 +92,7 @@ html, body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* HERO WRAPPER */
   .hero-radar {
@@ -232,7 +232,7 @@ html, body {
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .bento-grid {
     width: 100% !important;
     max-width: 100% !important;
@@ -257,7 +257,7 @@ html, body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* CARD */
   .ducky-card,
@@ -412,7 +412,7 @@ html, body {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hero-content {
     padding-top: 10px;   /* was probably 80–120px */
     padding-bottom: 160px;
@@ -1037,8 +1037,7 @@ html, body {
   }
 
   .solution-box {
-   min-height: 65vh;
-  padding: clamp(24px, 6vw, 40px);
+  padding: 32px 24px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1225,7 +1224,7 @@ html, body {
   transform: scale(1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* MARQUEE WRAPPER */
   .testimonial-marquee {
@@ -1315,14 +1314,14 @@ html, body {
 }
 
 /* Mobile only */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .join-section {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .join-section {
     padding: 24px 20px;
     border-radius: 20px;
@@ -1330,7 +1329,7 @@ html, body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .join-projects-box {
     max-width: calc(100% - 40px);
     margin: 0 auto;
@@ -1626,7 +1625,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* Problems container */
   .problems-grid {
@@ -1638,8 +1637,7 @@ body {
   }
 
   .problem-box {
-   min-height: 65vh;
-  padding: clamp(24px, 6vw, 40px);
+  padding: 32px 24px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1673,7 +1671,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .problems-grid,
   .solutions-grid {
     grid-template-columns: 1fr;
@@ -1683,7 +1681,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   .hero-header {
     padding-top: 60px;        /* reduce top space */
