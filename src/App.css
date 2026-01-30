@@ -749,9 +749,9 @@ html, body {
   .problems-grid::before {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -42%);
+    transform: translate(-50%, -43%);
     width: 1350px; 
-    height: 2680px;
+    height: 2300px;
   }
 }
 
