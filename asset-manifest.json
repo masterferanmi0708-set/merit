@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/merit/static/css/main.91e21750.css",
+    "main.css": "/merit/static/css/main.fecf8b1f.css",
     "main.js": "/merit/static/js/main.83e0faaf.js",
     "static/js/453.805bbe09.chunk.js": "/merit/static/js/453.805bbe09.chunk.js",
     "static/media/grad.png": "/merit/static/media/grad.8114d1407e4e9f615aae.png",
@@ -9,13 +9,16 @@
     "static/media/char3.png": "/merit/static/media/char3.ddfe4f6fa3bb9113f1ee.png",
     "static/media/ducky.png": "/merit/static/media/ducky.60e08767e57a44101c4a.png",
     "static/media/hypertrade.png": "/merit/static/media/hypertrade.732cd497882bb5fcb6a2.png",
+    "static/media/ppneuemontreal-medium.otf": "/merit/static/media/ppneuemontreal-medium.0f34f4714f1b26e0dedc.otf",
+    "static/media/ppneuemontreal-bold.otf": "/merit/static/media/ppneuemontreal-bold.34a4eb1a093eb36b2f46.otf",
+    "static/media/ppneuemontreal-book.otf": "/merit/static/media/ppneuemontreal-book.cd21cf351f4da50cf75d.otf",
     "index.html": "/merit/index.html",
-    "main.91e21750.css.map": "/merit/static/css/main.91e21750.css.map",
+    "main.fecf8b1f.css.map": "/merit/static/css/main.fecf8b1f.css.map",
     "main.83e0faaf.js.map": "/merit/static/js/main.83e0faaf.js.map",
     "453.805bbe09.chunk.js.map": "/merit/static/js/453.805bbe09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91e21750.css",
+    "static/css/main.fecf8b1f.css",
     "static/js/main.83e0faaf.js"
   ]
 }
