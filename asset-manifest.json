@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/merit/static/css/main.fecf8b1f.css",
-    "main.js": "/merit/static/js/main.83e0faaf.js",
+    "main.css": "/merit/static/css/main.e503d0b0.css",
+    "main.js": "/merit/static/js/main.bf1bb097.js",
     "static/js/453.805bbe09.chunk.js": "/merit/static/js/453.805bbe09.chunk.js",
     "static/media/grad.png": "/merit/static/media/grad.8114d1407e4e9f615aae.png",
     "static/media/char2.png": "/merit/static/media/char2.74c411759d72178c512a.png",
@@ -13,12 +13,12 @@
     "static/media/ppneuemontreal-bold.otf": "/merit/static/media/ppneuemontreal-bold.34a4eb1a093eb36b2f46.otf",
     "static/media/ppneuemontreal-book.otf": "/merit/static/media/ppneuemontreal-book.cd21cf351f4da50cf75d.otf",
     "index.html": "/merit/index.html",
-    "main.fecf8b1f.css.map": "/merit/static/css/main.fecf8b1f.css.map",
-    "main.83e0faaf.js.map": "/merit/static/js/main.83e0faaf.js.map",
+    "main.e503d0b0.css.map": "/merit/static/css/main.e503d0b0.css.map",
+    "main.bf1bb097.js.map": "/merit/static/js/main.bf1bb097.js.map",
     "453.805bbe09.chunk.js.map": "/merit/static/js/453.805bbe09.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fecf8b1f.css",
-    "static/js/main.83e0faaf.js"
+    "static/css/main.e503d0b0.css",
+    "static/js/main.bf1bb097.js"
   ]
 }
