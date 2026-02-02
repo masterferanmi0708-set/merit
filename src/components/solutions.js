@@ -19,7 +19,7 @@ const Solutions = () => {
     }
   ];
   return (
-<section className="solutions-section">
+<section className="solutions-section fade-in">
       <div className="container text-center">
         {/* Solution Introduction */}
        

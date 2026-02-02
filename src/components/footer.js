@@ -1,7 +1,7 @@
 const Footer = () => {
 
   return (
-<footer className="footer-section">
+<footer className="footer-section fade-in">
       <div className="container">
         {/* Decorative Divider Line */}
         <div className="footer-divider"></div>

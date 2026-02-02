@@ -1,6 +1,9 @@
+
+
 * {
-  font-family: 'PP Neue Montreal', sans-serif;
+  font-family: 'PP Neue Montreal', sans-serif !important;
 }
+
 
 
 /* hero section */
@@ -148,7 +151,7 @@ html, body {
 
 .gallery-subtitle{
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 36px;
   letter-spacing: 0%;
   font-size: clamp(8px, 14vw, 16px);
@@ -192,8 +195,8 @@ html, body {
   
 }
 
-.section-tag { color: #C500FF; text-transform: uppercase; font-size: 18px; font-size: clamp(12px, 3vw, 16px) !important; }
-.section-title { font-size: 64px; font-weight: 500; margin: 10px 0; font-size: clamp(24px, 6vw, 64px);}
+.section-tag { color: #C500FF;  font-size: 18px; font-size: clamp(14px, 3vw, 18px) !important; }
+.section-title { font-size: 64px;  margin: 10px 0; font-size: clamp(24px, 6vw, 64px);}
 .section-subtitle { color: rgba(255, 255, 255, 0.6); font-size: 20px; font-size: clamp(10px, 3vw, 20px) !important; }
 
 .bento-grid {
@@ -730,6 +733,11 @@ html, body {
   background: linear-gradient(to right, #000000, #2D003A, #C500FF, #2D003A, #000000) border-box;
   
   /* This MASK is the secret: it keeps the inside black and shows only the border */
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+
+
   -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
@@ -1199,7 +1207,7 @@ html, body {
   display: flex;
   gap: 330px;
   width: max-content;
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -1235,7 +1243,7 @@ html, body {
   /* TRACK: tighter spacing */
   .testimonial-track {
     gap: 60px;                /* was 330px */
-    animation-duration: 55s;  /* slower = readable */
+    animation-duration: 70s;  /* slower = readable */
   }
 
   /* CARD WRAPPER */
@@ -1702,3 +1710,12 @@ body {
     font-size: 14px;
   }
 } */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}

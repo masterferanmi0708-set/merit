@@ -11,7 +11,7 @@ const [activeIndex, setActiveIndex] = useState(1); // "How fast can I expect res
   ];
   return (
 
-   <section className="faq-section">
+   <section className="faq-section fade-in">
       <div className="container">
         <div className="faq-header text-center">
           <h2>FAQs</h2>

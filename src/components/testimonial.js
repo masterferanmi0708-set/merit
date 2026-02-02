@@ -12,7 +12,7 @@ const cards = Array(6).fill({
     "Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry's Standard Dummy Text Ever Since The 1500s, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book."
 });
   return (
- <section className="testimonials-section">
+ <section className="testimonials-section fade-in">
       <div className=" text-center">
         {/* Header Section */}
         <div className="testimonial-intro mb-5">
@@ -23,9 +23,9 @@ const cards = Array(6).fill({
 
 
        <div className="testimonial-marquee">
-        <div className="testimonial-track">
+        <div className="testimonial-track ">
           {[...cards, ...cards].map((card, i) => (
-            <div className="testimonial-wrapper" key={i}>
+            <div className="testimonial-wrapper fade-in" key={i}>
               <div className="testimonial-ribbon">
                 <div className="user-info">
                   <h5>{card.name}</h5>
@@ -49,7 +49,7 @@ const cards = Array(6).fill({
 </div>
 
         {/* Join Projects CTA Box */}
-        <div className=" container join-projects-box mt-5">
+        <div className=" container join-projects-box mt-5 fade-in">
           <div className="user-avatars mb-3">
              <img src={avatar1} alt="u1" />
              <img src={avatar2} alt="u2" />

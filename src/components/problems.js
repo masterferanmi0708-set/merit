@@ -20,13 +20,13 @@ const Problems = () => {
 
   return (
 
-    <section className="problems-section">
+    <section className="problems-section fade-in">
       <div className="container">
         <h2 className="problems-main-title">What Problems Is Your Project Facing Currently?</h2>
         
         <div className="problems-grid">
           {problemList.map((item, index) => (
-            <div key={index} className="problem-box">
+            <div key={index} className="problem-box fade-in">
               <div className="problem-icon">
                 <div className="sad-face"></div>
               </div>
@@ -36,16 +36,16 @@ const Problems = () => {
           ))}
         </div>
          
-         <div className="solution-intro">
+         <div className="solution-intro fade-in">
           <span className="solution-tag">Solution</span>
           <h2 className="solution-title">Let’s Help You Solve Your Problems</h2>
           <p className="solution-subtitle">We Tackle Your Visibility Problem different ways</p>
         </div>
 
-        <div class="arc-wrapper">
-            <div class="arc arc-1"></div>
-            <div class="arc arc-2"></div>
-            <div class="arc arc-3"></div>
+        <div className="arc-wrapper">
+            <div className="arc arc-1"></div>
+            <div className="arc arc-2"></div>
+            <div className="arc arc-3"></div>
         </div>
 
 
